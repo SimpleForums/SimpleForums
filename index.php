@@ -86,7 +86,7 @@
             </ol>
             <h2>SimpleForums Installer</h2><p>Version: ' . $sf_version . '</p>
             <p>
-            Welcome to SimpleForums, the simple way to manage your forums.<br><hr>
+            Welcome to SimpleForums, the simple, compact, and efficient way to manage your forums.<br><hr>
             The requirements for SimpleForums are:
             <ul>
                 <li>A functional web server</li>
@@ -94,7 +94,7 @@
                 <li>About 4 minutes to install</li>
             </ul>
             <hr>
-            If you meet all of the requirements, press continue to proceed.
+            If you meet all of the requirements listed, press continue to proceed the installation.
             </p>
             <a href="?page=install&id=2" class="btn btn-primary" role="button" aria-pressed="true">Continue</a>
             ';
@@ -165,11 +165,11 @@ $install_lock =  "no";
                  include 'config.php';
                  echo '
                  <div class="alert alert-warning" role="alert">
-                     <strong>Important Note!</strong> Exiting the installer now will cause the installation of SimpleForums to be broken.<br>
+                     <strong>Important Note!</strong> Exiting the installer now will cause the installation of SimpleForums to be broken and inoperable.<br>
                      If you do exit, please delete the contents of the config.php file.
                  </div>
                  <div class="alert alert-success" role="alert">
-                     <strong>Success!</strong> The information you supplied for the database works! Please wait while the database gets setup.  You will see a continue button once this is done.
+                     <strong>Success!</strong> The information you supplied for the database works! Please wait while the database gets setup with the database.  You will see a continue button once this is complete.
                  </div>';
                  $sql_steps = '4';
                  $sql = "CREATE TABLE sf_posts (
@@ -214,7 +214,7 @@ s_contents TEXT NOT NULL
                  mysqli_query($conn, $sql);
                  $conn->close();
                  echo '<br>Step 4 of ' . $sql_steps . ' completed.';
-                 echo '<br>All steps completed.  Please press the button below to setup the site preferences.<br><br>';
+                 echo '<br>All steps are completed.  Please press the button below to setup the site preferences.<br><br>';
                  echo '<a href="?page=install&id=4" class="btn btn-primary" role="button" aria-pressed="true">Continue</a>';
                  }
         } elseif ($_GET['id'] == '4') {
@@ -271,8 +271,8 @@ $install_lock =  "yes";
                <li class="breadcrumb-item active">Finished</li>
             </ol>
             <h2>SimpleForums ' . $sf_version . '</h2>
-            <p>You have finished the install for SimpleForums.<br>
-            You can login with the information you just chose when setting up.</p>
+            <p>You have finished the installation process for SimpleForums.<br>
+            You can now login with the information you just chose when setting up.</p>
             <a href="?page=" class="btn btn-primary" role="button" aria-pressed="true">Go to Home</a>
             ';
     	}
