@@ -438,7 +438,7 @@ $install_lock =  "yes";
             <div class="col-4">';
             if (isset($_POST['submit'])) {
             echo '<div class="alert alert-danger" role="alert">
-                We are sorry, but it seems that our registration servers are shutdown at this moment. Please try again later.
+                The information you supplied is not valid, please try again.
             </div>';
             }
             echo '<label for="username" class="form-label">Username</label><br>
