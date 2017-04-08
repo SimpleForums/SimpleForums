@@ -413,7 +413,7 @@ $install_lock =  "yes";
             <div class="col-4">';
             if (isset($_POST['submit'])) {
             echo '<div class="alert alert-danger" role="alert">
-                The username and/or password you supplied is incorrect.
+                The username and/or password you have supplied is incorrect. Check your details again to be sure it is correct.
             </div>';
             }
             echo '<label for="username" class="form-label">Username</label><br>
@@ -438,7 +438,7 @@ $install_lock =  "yes";
             <div class="col-4">';
             if (isset($_POST['submit'])) {
             echo '<div class="alert alert-danger" role="alert">
-                Insert convincing error here.
+                We are sorry, but it seems that our registration servers are shutdown at this moment. Please try again later.
             </div>';
             }
             echo '<label for="username" class="form-label">Username</label><br>
