@@ -206,7 +206,7 @@ f_ishidden TEXT NOT NULL
 )";
                  mysqli_query($conn, $sql);
                  echo '<br>Step 3 of ' . $sql_steps . ' completed.';
-                 $sql = "CREATE TABLE sf_forums (
+                 $sql = "CREATE TABLE sf_settings (
 s_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 s_name TEXT NOT NULL, 
 s_contents TEXT NOT NULL
